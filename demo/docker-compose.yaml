@@ -1,0 +1,15 @@
+version: "3.9"  # optional since v1.27.0
+
+services:
+  demo:
+    container_name: demo
+    image: demo:1.0
+    ports:
+      - "3000:3000"
+    networks:
+      - my-network
+
+networks:
+  my-network: 
+
+
